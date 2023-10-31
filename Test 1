@@ -1,18 +1,18 @@
 onEvent('server.load', function (event) {
-  event.server.schedule(115 * MINUTE, event.server, function (callback) {
+  event.server.schedule(55 * MINUTE, event.server, function (callback) {
     callback.data.tell('Server restarting in 5 minutes!')
   })
 
-  event.server.schedule(118 * MINUTE, event.server, function (callback) {
+  event.server.schedule(58 * MINUTE, event.server, function (callback) {
     callback.data.tell('Server restarting in 2 minutes!')
   })
 
 
-  event.server.schedule(119 * MINUTE, event.server, function (callback) {
+  event.server.schedule(59 * MINUTE, event.server, function (callback) {
     callback.data.tell('Server restarting NOW!  It Will Take 3 Mins!')
   })
 
-  event.server.schedule(120 * MINUTE, event.server, function (callback) {
+  event.server.schedule(60 * MINUTE, event.server, function (callback) {
     callback.data.runCommand('/stop')
   })
 })
